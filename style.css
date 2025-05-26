@@ -1,0 +1,178 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+}
+
+.section {
+  padding: 100px 20px 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .section {
+    padding-top: 120px;
+  }
+}
+
+/* === Enhanced Color Styling Add-on === */
+
+/* Navbar Gradient & Shadow */
+header {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: #fff;
+}
+
+.nav-links a {
+  color: #eee;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+/* Section Colors */
+#about {
+  background: #e0f7fa; /* Light teal */
+}
+
+#skills {
+  background: #fffde7; /* Light yellow */
+}
+
+#projects {
+  background: #f3e5f5; /* Light purple */
+}
+
+#experience {
+  background: #ede7f6; /* Pale lavender */
+}
+
+#education {
+  background: #e8f5e9; /* Mint green */
+}
+
+#certifications {
+  background: #fff3e0; /* Soft orange */
+}
+
+#contact {
+  background: #e1f5fe; /* Light sky blue */
+}
+
+/* Section headers colorized */
+.section h2 {
+  color: #2c3e50;
+  border-color: #bbb;
+}
+
+/* Card Glow Effect */
+.card {
+  border-left: 4px solid #03a9f4;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  border-left: 4px solid #00bcd4;
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+footer {
+  background: #2c3e50;
+  color: #fff;
+}
